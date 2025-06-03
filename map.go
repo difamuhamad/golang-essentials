@@ -8,8 +8,19 @@ func main() {
 		"address": "Bandung",
 	}
 
+	book := map[string]string{
+		"title":     "Pulang",
+		"published": "December 2025",
+		"author":    "Generative AI",
+	}
+	fmt.Println(book)
+
+	delete(book, "author")
+	fmt.Println(book)
+
 	fmt.Println(student["name"])
 	fmt.Println(student["address"])
+	fmt.Println(student["wrong"])
 	fmt.Println(student)
 
 	// the hard way
