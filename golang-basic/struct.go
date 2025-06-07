@@ -53,3 +53,13 @@ func main() {
 	party3.pressQ()
 	party2.levelUp()
 }
+
+// ---------------------------- Struct Tag
+
+// `key:"value" key2:"value2"`
+
+type User struct {
+	ID    int    `json:"id" db:"user_id"`
+	Name  string `json:"name" validate:"required"`
+	Email string `json:"email,omitempty" db:"email_address"`
+}
